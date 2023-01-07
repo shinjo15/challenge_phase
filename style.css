@@ -112,6 +112,7 @@ input, select {
 }
 .text-lv1{
     font-size: 16px;
+    line-height: 1.5em
 }
 
 /* ------------header-------- */
@@ -142,4 +143,151 @@ header{
 .header-text-item a{
     color:inherit;
     text-decoration: none;
+}
+
+/* ------------main-------- */
+.main-back{
+  /* width: 100%; */
+  height: 650px;
+  background-image: url(img/mv.png);
+  background-position: center;
+  background-size: cover;
+}
+.main-copy{
+  text-align: center;
+  padding-top: 200px;
+  color: #fafafa;
+}
+.main-text{
+  padding-top: 10px;
+}
+
+/* ------------各contentで使用-------- */
+.content-title{
+  text-align: center;
+  padding-top: 90px;
+}
+.content-line{
+  width: 70px;
+  height: 3px;
+  background-color: #ec715f;
+  margin: 8px auto 0 auto;
+}
+.content-text{
+  text-align: center;
+  padding-top: 30px;
+}
+
+/* ------------portfolio-------- */
+#portfolio{
+  background-color: #eceff1;
+}
+.portfolio-back{
+  width: 920px;
+  margin: 0 auto;
+}
+.portfolio-box{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 30px 0 90px 0;
+}
+.portfolio-image{
+  width: 300px;
+  height: 250px;
+  background-color: aqua;
+}
+.portfolio-image:first-child{
+  background-image: url(img/sketch.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.portfolio-image:nth-child(2){
+  background-image: url(img/websuku.png);
+  background-position: center;
+  background-size: cover;
+}
+.portfolio-image:nth-child(3){
+  background-image: url(img/write.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.portfolio-image:nth-child(4){
+  background-image: url(img/webcamp.png);
+  background-position: center;
+  background-size: cover;
+}
+.portfolio-image:nth-child(5){
+  background-image: url(img/talk.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.portfolio-image:nth-child(6){
+  background-image: url(img/webcamp-mother.png);
+  background-position: center;
+  background-size: cover;
+}
+
+/* ------------feature-------- */
+.feature-back{
+  width: 980px;
+  margin: 0 auto;
+}
+.feature-box{
+  display: flex;
+  gap: 10px;
+  margin: 30px auto 90px auto;
+}
+.feature-content{
+  width: 320px;
+}
+/* .feature-content-icon{
+  margin: 0 auto;
+} */
+.feature-content i{
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+}
+.icon-size{
+  font-size: 60px;
+}
+.feature-content-title{
+  text-align: center;
+  margin-top: 10px;
+}
+.feature-content-text{
+  margin-top: 10px;
+}
+
+/* ------------profile-------- */
+#profile{
+  background-color: #eceff1;
+}
+.profile-back{
+  width: 1024px;
+  margin: 0 auto;
+}
+.profile-content{
+  display: flex;
+  margin-top: 30px;
+  padding-bottom: 90px;
+}
+.profile-content-box{
+  width: 512px;
+}
+.profile-image{
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url(img/my-icon.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.profile-skills-title{
+  padding-top: 20px;
+}
+.profile-name-text .profile-skills-text{
+  padding-top: 5px;
 }
