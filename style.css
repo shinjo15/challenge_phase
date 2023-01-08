@@ -291,3 +291,53 @@ header{
 .profile-name-text .profile-skills-text{
   padding-top: 5px;
 }
+
+/* ------------contact-------- */
+.contact-back{
+  width: 800px;
+  margin: 0 auto;
+}
+.contact-content{
+  display: flex;
+  margin: 30px auto 90px auto;
+}
+.contact-content-box{
+  width: 400px;
+}
+.contact-tel-title{
+  margin-top: 20px;
+}
+.contact-mail-text .contact-tel-text{
+  margin-top: 5px;
+}
+.contact-address-box{
+  display: table;
+  margin: 0 auto;
+}
+.contact-address-box a{
+  color: #000;
+}
+.contact-sns-box{
+  display: table;
+  margin: 0 auto;
+}
+.contact-sns-box i{
+  font-size: 50px;
+  margin-right: 20px;
+}
+.contact-sns-box i:last-child{
+  margin-right: 0px;
+}
+.sns{
+  margin-bottom: 5px;
+}
+
+/* ------------footer-------- */
+footer{
+  background-color: #ec715f;
+  color: #fafafa;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
