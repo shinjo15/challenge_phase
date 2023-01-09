@@ -110,11 +110,23 @@ input, select {
 .title-lv3{
     font-size: 20px;
 }
+.copy-lv1{
+  font-size: 20px;
+}
 .text-lv1{
     font-size: 16px;
     line-height: 1.5em
 }
-
+/* -----font-size @media(767px)------ */
+@media screen and (max-width:767px){
+  .title-lv1{
+    font-size: 40px;
+}
+.copy-lv1{
+  font-size: 18px;
+}
+}
+  
 /* ------------header-------- */
 header{
     height: 70px;
@@ -122,8 +134,11 @@ header{
 }
 .header-box{
     margin: 0 auto;
-    width: 1024px;
+    max-width: 1024px;
     display: flex;
+}
+.header-box img{
+  height: 70px;
 }
 .header-box-text{
     margin: 0 0 0 auto;
@@ -136,6 +151,9 @@ header{
     display: flex;
     align-items: center;
 }
+.bars{
+  display: none;
+}
 .header-text-item{
     margin: 0 30px;
     color: #fafafa;
@@ -144,10 +162,29 @@ header{
     color:inherit;
     text-decoration: none;
 }
-
+/* ------------header @media(767px)-------- */
+@media screen and (max-width:767px){
+  header{
+    height: 50px;
+  }
+  .header-box{
+    width: 90%;
+  }
+  .header-box img{
+    height: 50px;
+  }
+  .header-text-item{
+    display: none;
+  }
+  .bars{
+    display: block;
+    margin: 5px 0;
+    font-size: 40px;
+    color: #fafafa;
+  }
+}
 /* ------------main-------- */
 .main-back{
-  /* width: 100%; */
   height: 650px;
   background-image: url(img/mv.png);
   background-position: center;
@@ -160,6 +197,12 @@ header{
 }
 .main-text{
   padding-top: 10px;
+}
+/* ------------main @media(767px)-------- */
+@media screen and (max-width:767px){
+  .main-back{
+    background-image: url(img/code.png);
+  }
 }
 
 /* ------------各contentで使用-------- */
@@ -183,7 +226,7 @@ header{
   background-color: #eceff1;
 }
 .portfolio-back{
-  width: 920px;
+  max-width: 920px;
   margin: 0 auto;
 }
 .portfolio-box{
@@ -227,14 +270,40 @@ header{
   background-position: center;
   background-size: cover;
 }
+/* ------------portfolio @media(767px)-------- */
+@media screen and (max-width:767px){
+  .portfolio-back{
+    width: 90%;
+  }
+  .portfolio-box{
+    display: block;
+    margin: 0 auto;
+  }
+  .portfolio-image:first-child{
+    height: 0px;
+  }
+  .portfolio-image:nth-child(3){
+    height: 0px;
+  }
+  .portfolio-image:nth-child(5){
+    height: 0px;
+  }
+  .portfolio-image:nth-child(2),  .portfolio-image:nth-child(4){
+    margin: 0 auto 10px auto;
+  }
+  .portfolio-image:nth-child(6){
+    margin: 0 auto;
+  }
+}
 
 /* ------------feature-------- */
 .feature-back{
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto;
 }
 .feature-box{
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin: 30px auto 90px auto;
 }
@@ -259,17 +328,27 @@ header{
 .feature-content-text{
   margin-top: 10px;
 }
+/* ------------feature @media(767px)-------- */
+@media screen and (max-width:767px){
+  .feature-back{
+    width: 90%;
+  }
+  .feature-content{
+    margin: 0 auto;
+  }
+}
 
 /* ------------profile-------- */
 #profile{
   background-color: #eceff1;
 }
 .profile-back{
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 .profile-content{
   display: flex;
+  flex-wrap: wrap;
   margin-top: 30px;
   padding-bottom: 90px;
 }
@@ -291,10 +370,25 @@ header{
 .profile-name-text .profile-skills-text{
   padding-top: 5px;
 }
+/* ------------profile @media(767px)-------- */
+@media screen and (max-width:767px){
+  .profile-back{
+    width: 90%;
+  }
+  .profile-content-box{
+    margin: 0 auto;
+  }
+  .profile-name-title{
+    padding-top: 20px;
+  }
+  .profile-content-box{
+    text-align: center;
+  }
+}
 
 /* ------------contact-------- */
 .contact-back{
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
 }
 .contact-content{
@@ -330,6 +424,28 @@ header{
 }
 .sns{
   margin-bottom: 5px;
+}
+/* ------------contact @media(767px)-------- */
+@media screen and (max-width:767px){
+  .contact-back{
+    width: 90%;
+  }
+  .contact-content-box{
+    margin: 0 auto;
+  }
+  .contact-content{
+    display: block;
+  }
+  .contact-address-box{
+    text-align: center;
+  }
+  .sns{
+    text-align: center;
+    margin: 20px auto 5px auto;
+  }
+  .contact-sns-box i{
+    margin-right: 8px;
+  }
 }
 
 /* ------------footer-------- */
